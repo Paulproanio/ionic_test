@@ -1,0 +1,7 @@
+{
+  "name": "test_axios",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
