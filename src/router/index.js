@@ -1,10 +1,13 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import TabsPage from '../views/TabsPage.vue'
+import BuscarPlanta from '@/views/BuscarPlanta.vue'
+import MostrarPlanta from '@/views/MostrarPlanta.vue'
+import RegistroCrecimiento from '@/views/RegistroCrecimiento.vue'
 
 const routes = [
   {
     path: '/',
-    redirect: '/tabs/telefonolist'
+    redirect: '/tabs/buscarplanta'
   },
   {
     path: '/tabs/',
@@ -12,15 +15,30 @@ const routes = [
     children: [
       {
         path: 'telefonolist',
-        name:'telefonolist',
-        component:() =>import ('@/views/TelefonoList.vue')
+        name: 'telefonolist',
+        component: () => import('@/views/TelefonoList.vue')
       },
       {
         path: 'telefononuevo',
-        name:'telefononuevo',
-        component:() =>import ('@/views/TelefonoNuevo.vue')
+        name: 'telefononuevo',
+        component: () => import('@/views/TelefonoNuevo.vue')
+      },
+      {
+        path: 'buscarplanta',
+        name: 'buscarplanta',
+        component: BuscarPlanta
+      },
+      {
+        path: 'registrocrecimiento',
+        name: 'registrocrecimiento',
+        component: () => import('@/views/RegistroCrecimiento.vue')
+      },
+      {
+        path: 'planta/:idPlanta',
+        name: 'planta',
+        component: MostrarPlanta
       }
-    
+
     ]
   }
 ]

@@ -4,14 +4,19 @@
         <ion-router-outlet></ion-router-outlet>
         <ion-tab-bar>
 
-            <ion-tab-button tab="telefonolist" href="/tabs/telefonolist">
-                <ion-icon aria-hidden="true" :icon="menuOutline"></ion-icon>
-                <ion-label>Tab 1</ion-label>
+            <ion-tab-button tab="buscarplanta" href="/tabs/buscarplanta">
+                <ion-icon aria-hidden="true" :icon="flowerOutline"></ion-icon>
+                <ion-label>Buscar Planta</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button tab="registrocrecimiento" href="/tabs/registrocrecimiento">
+                <ion-icon aria-hidden="true" :icon="readerOutline"></ion-icon>
+                <ion-label>Registro crecimiento</ion-label>
             </ion-tab-button>
 
             <ion-tab-button tab="telefononuevo" href="/tabs/telefononuevo">
-                <ion-icon aria-hidden="true" :icon="serverSharp"></ion-icon>
-                <ion-label>Tab 2</ion-label>
+                <ion-icon aria-hidden="true" :icon="gridOutline"></ion-icon>
+                <ion-label>Buscar Lote</ion-label>
             </ion-tab-button>
 
         </ion-tab-bar>
@@ -53,7 +58,12 @@ import {
 } from '@ionic/vue';
 import {
     menuOutline,
-    serverSharp
+    //serverSharp,
+    flowerOutline,
+    gridOutline,
+    optionsOutline,
+    readerOutline,
+
 } from 'ionicons/icons'
 export default {
     name: 'TestAxiosTabsPage',
@@ -62,7 +72,11 @@ export default {
         return {
             name: 'TabsPage',
             menuOutline,
-            serverSharp
+            //serverSharp,
+            flowerOutline,
+            gridOutline,
+            optionsOutline,
+            readerOutline
         };
     },
 
