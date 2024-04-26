@@ -2,7 +2,7 @@
 <ion-page>
     <ion-header>
         <ion-toolbar>
-            <ion-title>Lista Planta </ion-title>
+            <ion-title color="success">Lista Planta </ion-title>
         </ion-toolbar>
     </ion-header>
     <ion-content>
@@ -10,7 +10,7 @@
             <ion-row>
 
                 <ion-col size="12">
-                    <ion-input label-placement="stacked" fill="outline" shape="round" color="success" label="ID" disabled="false" v-model="idPlanta"></ion-input>
+                    <ion-input label-placement="stacked" fill="outline" shape="round" color="success" label="Codigo planta.." disabled="false" v-model="idPlanta"></ion-input>
                 </ion-col>
                 <ion-col size="3"></ion-col>
                 <ion-col size="3">
@@ -22,9 +22,7 @@
                         <ion-icon :icon="closeOutline" ></ion-icon>
                     </ion-button>
                 </ion-col>
-                <ion-col size="3">
-
-                </ion-col>
+                <ion-col size="3"></ion-col>
                 <ion-col size="12">
 
                 </ion-col>

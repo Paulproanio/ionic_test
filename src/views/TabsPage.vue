@@ -5,7 +5,7 @@
         <ion-tab-bar>
 
             <ion-tab-button tab="buscarplanta" href="/tabs/buscarplanta">
-                <ion-icon aria-hidden="true" :icon="flowerOutline"></ion-icon>
+                <ion-icon aria-hidden="true"  :icon="flowerOutline"></ion-icon>
                 <ion-label>Buscar Planta</ion-label>
             </ion-tab-button>
 
@@ -14,10 +14,15 @@
                 <ion-label>Registro crecimiento</ion-label>
             </ion-tab-button>
 
-            <ion-tab-button tab="telefononuevo" href="/tabs/telefononuevo">
+            <ion-tab-button tab="buscarlote" href="/tabs/buscarlote">
                 <ion-icon aria-hidden="true" :icon="gridOutline"></ion-icon>
                 <ion-label>Buscar Lote</ion-label>
             </ion-tab-button>
+<!-- 
+            <ion-tab-button tab="telefononuevo" href="/tabs/telefononuevo">
+                <ion-icon aria-hidden="true" :icon="gridOutline"></ion-icon>
+                <ion-label>Buscar Lote</ion-label>
+            </ion-tab-button> -->
 
         </ion-tab-bar>
     </ion-tabs>

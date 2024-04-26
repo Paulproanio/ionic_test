@@ -14,7 +14,7 @@
         <ion-card color="success" elevation="1">
             <ion-card-header>
 
-                <ion-card-title color="danger"> FICHA TÉCNICA PLANTA
+                <ion-card-title > FICHA TÉCNICA PLANTA
 
                     <ion-chip v-if="elementosPlanta.proEstadoPlanta.idEstadoPlanta == 1 ">
                         <ion-avatar>

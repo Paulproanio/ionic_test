@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import TabsPage from '../views/TabsPage.vue'
 import BuscarPlanta from '@/views/BuscarPlanta.vue'
+import BuscarLote from '@/views/BuscarLote.vue'
 import MostrarPlanta from '@/views/MostrarPlanta.vue'
 import RegistroCrecimiento from '@/views/RegistroCrecimiento.vue'
 
@@ -27,6 +28,11 @@ const routes = [
         path: 'buscarplanta',
         name: 'buscarplanta',
         component: BuscarPlanta
+      },
+      {
+        path: 'buscarlote',
+        name: 'buscarlote',
+        component: BuscarLote
       },
       {
         path: 'registrocrecimiento',
