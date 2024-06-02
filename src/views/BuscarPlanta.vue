@@ -354,7 +354,7 @@ export default {
         traerDatosActividad(codigoPlanta) {
             axios.get('http://localhost:12590/api/tucann/proPlantaActividad/xidp/' + codigoPlanta)
                 .then(res => {
-                    console.log(res.data)
+                  
                     this.listActividadPlanta = res.data
                 })
                 .catch(err => {
