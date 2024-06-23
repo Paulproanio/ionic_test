@@ -135,7 +135,7 @@ export default {
                                 idPlanta: this.identPlantasCrecmiento[index],
                             }
                         }
-                        await axios.post('http://localhost:12590/api/tucann/proRegistroCrecimiento/', json)
+                        await axios.post('http://localhost:6060/api/tucann/proRegistroCrecimiento/', json)
                             .then(res => {})
                             .catch(err => {
                                 console.error(err);
@@ -169,7 +169,7 @@ export default {
         async traerPlantasLote(idLote) {
 
             this.identPlantasCrecmiento = [];
-            await axios.get('http://localhost:12590/api/tucann/proPlanta/bplxrs/' + idLote)
+            await axios.get('http://localhost:6060/api/tucann/proPlanta/bplxrs/' + idLote)
                 .then(res => {
                     this.numeroPlantasCreciMasivo = res.data.length;
                     for (let index = 0; index < res.data.length; index++) {
@@ -185,7 +185,7 @@ export default {
 
         async traerLote(idLote) {
 
-            await axios.get('http://localhost:12590/api/tucann/proRegistroSiembra/' + idLote.detail.value)
+            await axios.get('http://localhost:6060/api/tucann/proRegistroSiembra/' + idLote.detail.value)
                 .then(res => {
                     this.loteMostrar = res.data.loteRegistroSiembra
                     this.traerPlantasLote(res.data.loteRegistroSiembra)
@@ -213,7 +213,7 @@ export default {
         listarLotesSiembra() {
             try {
                 this.lotesSiembra = [];
-                axios.get('http://localhost:12590/api/tucann/proRegistroSiembra')
+                axios.get('http://localhost:6060/api/tucann/proRegistroSiembra')
                     .then(res => {
 
                         this.lotesSiembra = res.data
@@ -229,7 +229,7 @@ export default {
                         console.error(err);
                     })
 
-                // axios.get('http://localhost:12590/api/tucann/proRegistroSiembra/', {
+                // axios.get('http://localhost:6060/api/tucann/proRegistroSiembra/', {
                 //         headers: generalHeader()
                 //     })
                 //     .then(res => {

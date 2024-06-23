@@ -144,6 +144,7 @@ export default {
             }]
         };
     },
+    
 
     mounted() {
 
@@ -155,7 +156,7 @@ export default {
     methods: {
 
         async buscarPlanta(codigoPlanta) {
-            await axios.get('http://localhost:12590/api/tucann/proPlanta/' + codigoPlanta)
+            await axios.get('http://localhost:6060/api/tucann/proPlanta/' + codigoPlanta)
                 .then(res => {
                     console.log(res.data)
                     this.elementosPlanta = res.data

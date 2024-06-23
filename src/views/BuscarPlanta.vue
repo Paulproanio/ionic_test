@@ -274,7 +274,7 @@ export default {
 
         async buscarPlanta(codigoPlanta) {
             if (codigoPlanta) {
-                await axios.get('http://localhost:12590/api/tucann/proPlanta/' + codigoPlanta)
+                await axios.get('http://localhost:6060/api/tucann/proPlanta/' + codigoPlanta)
                     .then(res => {
 
                         this.elementosPlanta = res.data
@@ -342,7 +342,7 @@ export default {
         },
 
         traerDatosCrecimiento(codigoPlanta) {
-            axios.get('http://localhost:12590/api/tucann/proRegistroCrecimiento/xidpcr/' + codigoPlanta)
+            axios.get('http://localhost:6060/api/tucann/proRegistroCrecimiento/xidpcr/' + codigoPlanta)
                 .then(res => {
                     this.listaCrecimiento = res.data
                 })
@@ -352,7 +352,7 @@ export default {
         },
 
         traerDatosActividad(codigoPlanta) {
-            axios.get('http://localhost:12590/api/tucann/proPlantaActividad/xidp/' + codigoPlanta)
+            axios.get('http://localhost:6060/api/tucann/proPlantaActividad/xidp/' + codigoPlanta)
                 .then(res => {
                   
                     this.listActividadPlanta = res.data

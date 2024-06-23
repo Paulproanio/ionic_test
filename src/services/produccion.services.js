@@ -1,13 +1,13 @@
 import axios from "axios";
 import generalHeader from "@/services/general-header";
-const API_PROD = "http://localhost:12590/api/tucann/genUsuarioSistema/";
+const API_PROD = "http://localhost:6060/api/tucann/genUsuarioSistema/";
 
 class produccionServices {
 
   listarRegistroCrecimiento(idPlanta) {
     var config = {
       method: "get",
-      url: "http://localhost:12590/api/tucann/proRegistroCrecimiento/xidpcr/"+idPlanta,
+      url: "http://localhost:6060/api/tucann/proRegistroCrecimiento/xidpcr/"+idPlanta,
      // headers: generalHeader(),
      // data: usuario,
      ///proRegistroCrecimiento/xidpcr/{idPlanta}
